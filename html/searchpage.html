@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width">
    
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <link rel="stylesheet" href="css\styles.css">
+      <link rel="stylesheet" href="../css/styles.css">
       
       
 		<title>Foodies</title>
@@ -19,9 +19,15 @@
      
         <div class="container-fluid">
           <div class="row">
+
+            <a href="../index.html" >
+        
+                <button class=" button button1">&#8617   Back  </button>
+            </a>
               <div class="col-12">
-             
+                
                 <h1>Find your favorite restaurant with Foodies</h1>
+                <h2>Search Type</h2>
                
   
              
@@ -33,16 +39,32 @@
               </div>
           </div>
        </div>
-     <div class="container-fluid">
+     <div class="container-fluid flex-parent jc-center">
        <div class="row">
-        <a href="html/searchpage.html" >
+           
+               <section><label for="searchbyname">Search By Name:</label>
+                <input type="text" id="name" name="name" ><br>
+                
+                <input type="submit" value="Search"></section>
+           <section><a href="../html/searchbyprice.html" >
         
-          <button>Choose a restaurant</button>
-      </a>
-      <a href="https://www.wendys.com/home" >
+            <button>Search By Price</button>
+        </a></section>
+  
+        <a href="../html/searchpage.html" >
         
-          <button>Recomended</button>
-      </a>
+            <button>Search By Location</button>
+        </a>
+      
+    <a href="../html/searchbycategory.html" >
+        
+        <button>Choose By Category</button>
+    </a>
+
+    
+        
+     
+    
         </div>
    
 
