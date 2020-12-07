@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies - Search By State</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .collapsible 
+        {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover 
+        {
+          background-color: #555;
+        }
+        
+        .content 
+        {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #f1f1f1;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+  <!-- Title and Header-->
+  <header>
+
+    <h1>Menu-N-U</h1>
+    <div>Restaurant and Menu Search</div>
+    <a href="homepage.html">Foodies</a> 
+  
+  </header>
+
+  <!--Main Code-->
+  <section>
+
+    <!-- Search Title -->
+    <p>Search By State</p>
+
+    <!-- Input Form -->
+    <input id ="state" value="WA"></input>
+    <button onclick="askState()">Search</button>
+    <br />
+
+    <!-- Function Buttons -->
+    <p>Try a few of these options</p> 
+    <button onclick="getCA()">California (CA)</button>
+    <button onclick="getTX()">Texas (TX)</button>
+    <button onclick="getNY()">New York (NY)</button>
+    <button onclick="getFL()">Florida (FL)</button>
+    <br /><br />
+
+    <!-- Navigation Buttons -->
+    <br />
+    <button onclick="nextPage()">Next Page</button>
+    <br /><br />
+    
+    <!-- JavaScript Output -->
+    <div class="search"></div>
+
+    <!-- Navigation -->
+    <a href="index.html">Home Page</a> 
+
+    <!-- JavaScript -->
+    <script src="JavaScript/searchByState.js"></script>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+    Copyright &copy; 2020 Foodies Group. <br />
+    Created by Amber Dulz, Anastasia Gurskaia, Conner Hofheins, Anna Tarasiuk, and Victor Matsyshen<br />
+    This project is powered by <a href="https://documenu.com/">Documenu</a>. Visit their website for API details.<br />
+  
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies - Search By Zip Code</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .collapsible 
+        {
+          background-color: #777;
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover 
+        {
+          background-color: #555;
+        }
+        
+        .content 
+        {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #f1f1f1;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+  <!-- Title and Header-->
+  <header>
+
+    <h1>Menu-N-U</h1>
+    <div>Restaurant and Menu Search</div>
+    <a href="index.html">Foodies</a> 
+  
+  </header>
+
+  <!--Main Code-->
+  <section>
+
+    <p>Search By Zip Code</p>
+
+    <!-- Input Form -->
+    <input id ="zip" value="98105"></input>
+    <button onclick="askZip()">Search</button>
+    <br /><br />
+
+    <!-- Buttons -->
+    <br />
+    <button onclick="nextPage()">Next Page</button>
+    <br /><br />
+    
+    <!-- JavaScript Output -->
+    <div class="search"></div>
+
+    <!-- JavaScript -->
+    <script src="JavaScript/searchByZip.js"></script>
+
+  </section>
+
+  <!-- Search Title -->
+
+  <!-- Footer -->
+  <footer>
+
+    Copyright &copy; 2020 Foodies Group. <br />
+    Created by Amber Dulz, Anastasia Gurskaia, Conner Hofheins, Anna Tarasiuk, and Victor Matsyshen<br />
+    This project is powered by <a href="https://documenu.com/">Documenu</a>. Visit their website for API details.<br />
+  
+  </footer>
+
+</body>
+
+</html>
