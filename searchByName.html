@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies - Search By Name</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Title and Header-->
+  <header>
+
+    <h1>Menu-N-U</h1>
+    <div>Restaurant and Menu Search</div>
+    <a href="homepage.html">Foodies</a> 
+  
+  </header>
+
+  <!--Main Code-->
+  <section>
+
+    <!-- Search Title -->
+    <p>Search By Restaurant Name</p>
+
+    <!-- Input Form -->
+    <input id ="name" value="McDonalds"></input>
+    <button onclick="askName()">Search</button>
+    <br />
+
+    <!-- Function Buttons -->
+    <p>Try a few of these options</p> 
+    <button class="fetchButton" onclick="getWendys()"><img class="image" src="images/name.png" alt=""><br /><br />Wendys</button>
+    <button class="fetchButton" onclick="getChipotle()"><img class="image" src="images/name.png" alt=""><br /><br />Chipotle Mexican Grill</button>
+    <button class="fetchButton" onclick="getBaskinRobbins()"><img class="image" src="images/name.png" alt=""><br /><br />Baskin Robbins</button>
+    <button class="fetchButton" onclick="getKrispyKreme()"><img class="image" src="images/name.png" alt=""><br /><br />Krispy Kreme Doughnuts</button>
+    <br />
+
+    <!-- Navigation Buttons -->
+    <br />
+    <button onclick="nextPage()">Next Page</button>
+    <br /><br />
+      
+    <!-- JavaScript Output -->
+    <div class="search"></div>
+
+    <!-- JavaScript -->
+    <script src="searchByName.js"></script>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+    Copyright &copy; 2020 Foodies Group. <br />
+    Created by Amber Dulz, Anastasia Gurskaia, Conner Hofheins, Anna Tarasiuk, and Victor Matsyshen<br />
+    This project is powered by <a href="https://documenu.com/">Documenu</a>. Visit their website for API details.<br />
+  
+  </footer>
+
+</body>
+
+</html>
